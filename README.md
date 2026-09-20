@@ -55,6 +55,22 @@ python3 -m unittest discover -s tests
 
 ---
 
+## Workflows (Issue #5)
+
+### Weekly Dev Summary (n8n + Claude Code)
+
+Automated n8n workflow (`workflows/weekly_dev_summary.json`) that fetches commits, closed issues, and merged PRs from GitHub API every Friday at 5 PM, summarizes them with Claude API (`claude-sonnet-4-20250514`), and sends the update via Discord/Slack webhook in English or French.
+
+#### Quick Setup (5 Steps)
+
+1. **Import**: Import `workflows/weekly_dev_summary.json` into n8n.
+2. **Configure**: Edit the **Set Configuration** node with your `GITHUB_OWNER`, `GITHUB_REPO`, `WEBHOOK_URL`, `ANTHROPIC_API_KEY`, and `LANGUAGE` (`EN`/`FR`).
+3. **Schedule**: Confirm trigger is set for **Friday 5:00 PM**.
+4. **Test**: Run workflow to test GitHub fetching, Claude summarization, and webhook delivery.
+5. **Activate**: Switch workflow toggle to **Active**.
+
+---
+
 ## Rules
 
 - Tasks must be related to Claude Code or AI tooling
