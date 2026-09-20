@@ -26,3 +26,11 @@ An automated n8n workflow that collects GitHub commits, closed issues, and merge
 - 🤖 **Claude 4 Intelligence**: Generates a narrative summary using `claude-sonnet-4-20250514`.
 - 🌐 **Multi-Language Support**: Supports English (`EN`) and French (`FR`).
 - 💬 **Universal Webhook Delivery**: Compatible with both Discord and Slack webhooks.
+
+---
+
+## 🖼️ Execution Proof
+
+Below is a verified execution trace showing successful node executions (HTTP 200 OK) across all pipeline stages:
+
+![n8n Weekly Dev Summary Workflow Execution](./n8n_execution_screenshot.jpg)
